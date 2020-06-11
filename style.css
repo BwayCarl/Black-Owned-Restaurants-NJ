@@ -1,0 +1,110 @@
+/* HEADER - INTRO */
+.container-1 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffc0cb;
+    background-color:rgb(120, 60, 6);
+    flex: 1;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-size: 24px;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    border-style: solid 8px;
+    
+}
+    
+.head {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    order: 1;
+    padding: 30px;
+   
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffc0cb;
+}
+a:hover {
+    color: tomato;
+    font-weight: 800; 
+}
+a:visited {
+    text-decoration: none;
+    color: tomato;
+   
+}
+.about {
+    
+    flex: 1;
+    order: 2;
+    padding: 30px;
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: slategrey;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 6px;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding:  8px;
+  font-size: 25px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 60%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
