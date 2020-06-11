@@ -18,12 +18,12 @@
     flex-direction: row;
     align-self: start;
     align-items: flex-start;
-    
 }
    
 .img {
   max-width: 550px;
 }
+
 .head {
     display: flex;
     flex-direction: column;
@@ -31,10 +31,9 @@
     order: 1;
     padding: 20px;
     flex-wrap: wrap;
-   
 }
-.about {
-    
+
+.about {  
   flex: 1;
   order: 2;
   padding: 20px;
@@ -46,14 +45,15 @@ a:link {
     text-decoration: none;
     color: #ffc0cb;
 }
+
 a:hover {
     color: tomato;
     font-weight: 800; 
 }
+
 a:visited {
     text-decoration: none;
     color: tomato;
-   
 }
 
 * {
@@ -138,6 +138,7 @@ body {
     max-width: 50%;
     align-items: center;
   }
+    
   .container-1 {
     -ms-flex: 50%;
     flex: 50%;
