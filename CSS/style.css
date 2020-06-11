@@ -1,29 +1,45 @@
 /* HEADER - INTRO */
 .container-1 {
     display: flex;
+    flex: 1;
+    display: -ms-flexbox;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffc0cb;
-    background-color:rgb(120, 60, 6);
-    flex: 1;
+    background-color: slategrey;
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
     line-height: 1.6;
     font-size: 24px;
-    align-items: center;
-    text-align: justify;
+    text-align: start;
     margin: auto;
     border-style: solid 8px;
+    flex-basis: 50%;
+    flex-direction: row;
+    align-self: start;
+    align-items: flex-start;
     
 }
-    
+   
+.img {
+  max-width: 550px;
+}
 .head {
     display: flex;
     flex-direction: column;
     flex:1;
     order: 1;
-    padding: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
    
+}
+.about {
+    
+  flex: 1;
+  order: 2;
+  padding: 20px;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 a:link {
@@ -38,13 +54,6 @@ a:visited {
     text-decoration: none;
     color: tomato;
    
-}
-.about {
-    
-    flex: 1;
-    order: 2;
-    padding: 30px;
-    text-align: center;
 }
 
 * {
@@ -74,7 +83,7 @@ body {
   text-align: center;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create five equal columns that sits next to each other */
 .column {
   -ms-flex: 20%; /* IE10 */
   flex: 20%;
@@ -87,24 +96,62 @@ body {
 
 .column img {
   margin-top: 8px;
-  vertical-align: middle;
-  width: 60%;
+  vertical-align: top;
+  width: 50%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* Responsive layout - makes a three column-layout instead of five columns */
+@media screen and (max-width: 900px) {
   .column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: 33%;
+    align-items: left;
+  }
+
+  .container-1 {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+  }
+
+  .head {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    align-items: center;
+  }
+  .container-1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .head {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    align-items: center;
   }
 }
